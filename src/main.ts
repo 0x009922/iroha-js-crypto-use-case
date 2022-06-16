@@ -57,7 +57,10 @@ function buildRequestBody(params: {
   };
 }
 
-function FAKE_AES_256_GCM(hash: Uint8Array, password: string): Uint8Array {
+function FIXME_RANDOM_AES_256_GCM(
+  hash: Uint8Array,
+  password: string
+): Uint8Array {
   return new Uint8Array([
     // some bytes
     1, 2, 3, 4,
@@ -78,7 +81,7 @@ async function main() {
   // "3. Web application restore users authentication keypair
   //     in the same manner as described above"
   // making seed with AES
-  const seedBytes = FAKE_AES_256_GCM(hash, password);
+  const seedBytes = FIXME_RANDOM_AES_256_GCM(hash, password);
   // making key pair
   const keypair = createKeyPairWithSeed(seedBytes);
 
