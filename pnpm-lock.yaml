@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@iroha2/crypto-core': ^0.1.1
   '@iroha2/crypto-target-node': ^0.2.0
+  '@iroha2/data-model': ^1.2.1
   '@types/node': ^18.0.0
   hada: ^0.0.8
   tsx: ^3.4.3
@@ -11,6 +12,7 @@ specifiers:
 dependencies:
   '@iroha2/crypto-core': 0.1.1
   '@iroha2/crypto-target-node': 0.2.0
+  '@iroha2/data-model': 1.2.1
   '@types/node': 18.0.0
   hada: 0.0.8
   tsx: 3.4.3
@@ -47,6 +49,44 @@ packages:
     resolution: {integrity: sha512-q17jl4/wqV/dXCxejdZ+iD9cEnD0AQJ7uTUF4bmhDzvN7b6zc/eIwsTwD6HiRrMkNjQsDviMKX+9VDD5xkm5yw==}
     dependencies:
       '@iroha2/crypto-core': 0.1.1
+    dev: false
+
+  /@iroha2/data-model/1.2.1:
+    resolution: {integrity: sha512-+KIq8A3gz9CaFtmxXTFPi3EJvC4ka4312pQAJmWZnE81c95onp/07yItITYX0dFkrG7EzQjc2Q8QyriEA4ETTg==}
+    dependencies:
+      '@iroha2/i64-fixnum': 0.3.1
+      '@scale-codec/definition-runtime': 2.0.0
+    dev: false
+
+  /@iroha2/i64-fixnum/0.3.1:
+    resolution: {integrity: sha512-Onbftk8JtmNaaNh+F0zezOxyLZ/gpqIbpg4zElJ6XSbN69TlPj0eXl1J0iGUp6zMfhzYNHFOi3G/CF0bFhu+rg==}
+    dependencies:
+      '@scale-codec/util': 1.0.0
+    dev: false
+
+  /@scale-codec/core/1.0.1:
+    resolution: {integrity: sha512-HqrIIw1NwJXEoDAKRMxuKXoSJQ5HU9X8DuMdOLvkIaN/4Jl/vOvkcWTpfrPKOGgj7qgmxbZc4RjJoQZs6L9o+g==}
+    engines: {node: '>=14.5.0'}
+    dependencies:
+      '@scale-codec/enum': 1.0.2
+      '@scale-codec/util': 1.0.0
+    dev: false
+
+  /@scale-codec/definition-runtime/2.0.0:
+    resolution: {integrity: sha512-GCd2PMbJc/kby5ZHR4sLm5NNgfdLDWBSoe4/hsHzKL0pZpVlF2Xokgat8IkwDthKDAB4lKaUgeFRH5UrNDMOtQ==}
+    dependencies:
+      '@scale-codec/core': 1.0.1
+      '@scale-codec/util': 1.0.0
+      fmt-subs: 1.0.2
+      type-fest: 2.13.1
+    dev: false
+
+  /@scale-codec/enum/1.0.2:
+    resolution: {integrity: sha512-+3DkXIyMRMq0EYfJpmxeGWUDWIupyjlXqCID5iHTCqnsTyU0Zysfqv3TqGCuBQW+MK325U72usuBQ2WhiEO5ZA==}
+    dev: false
+
+  /@scale-codec/util/1.0.0:
+    resolution: {integrity: sha512-Y19tdkyHtFNJDX5cztqUTYzTp4xyiOaG79vcQdyD0GB4q+lGFdeqUCNSYrcuxrzZirXnOfATy/rdLK2ZZyRT6w==}
     dev: false
 
   /@types/node/18.0.0:
@@ -265,6 +305,10 @@ packages:
       esbuild-windows-arm64: 0.14.38
     dev: false
 
+  /fmt-subs/1.0.2:
+    resolution: {integrity: sha512-s2Ku+7r58SLCA4io44DaYPHvJi6b9D2Qs3a7fpGAhaZ9vA6t4d+WgMhp9ueq2elcHmU1JwstzmOX+2dB7JqoKg==}
+    dev: false
+
   /fsevents/2.3.2:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
@@ -302,6 +346,11 @@ packages:
       '@esbuild-kit/esm-loader': 2.2.0
     optionalDependencies:
       fsevents: 2.3.2
+    dev: false
+
+  /type-fest/2.13.1:
+    resolution: {integrity: sha512-hXYyrPFwETT2swFLHeoKtJrvSF/ftG/sA15/8nGaLuaDGfVAaq8DYFpu4yOyV4tzp082WqnTEoMsm3flKMI2FQ==}
+    engines: {node: '>=12.20'}
     dev: false
 
   /typescript/4.7.3:
